@@ -21,7 +21,7 @@ function lorem() {
 BlogPosts.create(
   '10 things -- you won\'t believe #4', lorem(), 'Billy Bob');
 BlogPosts.create(
-  'Lions and tigers and bears oh my', lorem(), 'Lefty Lil');
+  'Lions and tigers and bears oh my', lorem(), 'Lefty Lil', '1977');
 
 // add endpoint for GET. It should call `BlogPosts.get()`
 // and return JSON objects of stored blog posts.
@@ -40,7 +40,7 @@ router.get('/', (req, res) => {
 // `title`, `content`, and `author`
 router.post('/', jsonParser, (req, res) => {
   // ensure `name` and `budget` are in request body
-  const requiredFields = ['title', 'content', 'author'];
+  const requiredFields = ['title', 'content', 'author', 'date'];
   for (let i=0; i<requiredFields.length; i++) {
     const field = requiredFields[i];
     if (!(field in req.body)) {
