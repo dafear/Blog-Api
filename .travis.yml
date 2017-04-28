@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: SCfsHWrVeMSNFBPhtoeVooUwMD5HQ5El/DZZ6g6xlllLrY1rG7egsUCVyI6BsMp81ADbtWLk1t+U/p59sdJ89QlqxPuUU5PavU2ZnLXRwBfq4i/hkNWyxsKQoRro1QQJo4VQHbDAdz30hjnulfcL+DzoK772yAbFTbpLYJGy26Dea6c4eY1D9vujnNruPcyY4A30tDBueNFTqP15pX7IHFHGB1LSFJVC69pEzld3lprFNfDsk5SyDou+KGHOV1Tf+ztxFcyiqcNR6BNleiVcQq62XTzVUgtsLT6yXprQM78F51GpEWYzd1ZQi34wW2RWMWTN2GGizJrF/DrJ2MdQJ9oDyUT4dVVeoHVBQ3vL9HwjK1muuoVL9l+AV/wDK2sNpp+iKiJeZDW30Mgd/AD5B8rZGRJPBOa8ynLRGePA4y/kquAqAjO3yq/dOSyM+Ejf3g2MhuZP9xtwyQB7qVKxqDrgQOMCNBcl1gHQ4TiJ91HPk0x5G0r3vAQEtSSdDUd7+Bq6DzLUXMxg8/qO3xkEnzm25k0Zu6f56ue52eefzRlCKlm1CoGKI7J/Q9XCVdHRzz9K48Fru8IOYaVDQiwappX3v/LBlDnDVsKTIELufDgKroBr4KBern+DEh7OkKEUq6TbU/GV47FJEAxbUrrLQlEmVX85PJhTNYmfq7PiuVg=
+  app: peaceful-scrubland-16160
+  on:
+    repo: dafear/Blog-Api
